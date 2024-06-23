@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['coptic-alphabet.page.scss']
 })
 export class CopticAlphabetPage {
-
+  audio = new Audio();
   copticLetters = [
     { maj: 'Ⲁ', min: 'ⲁ', name: 'alpʰa', transliteration: ['a'], pronunciation: ['[a, ʕ, ʔ]'] },
     { maj: 'Ⲃ', min: 'ⲃ', name: 'bēta', transliteration: ['b'], pronunciation: ['[b, v, w]'] },
@@ -44,10 +44,9 @@ export class CopticAlphabetPage {
     { maj: 'Ⳁ', min: 'ⳁ', name: 'pˢis ənše', transliteration: ['ssss'], pronunciation: ['[c:]', '[t͡s]'] }
   ];
 playPronunciation(name: string) {
-  const audio = new Audio();
-  audio.src = `assets/pronunciations/${name}.mp3`;
-  audio.load();
-  audio.play();
+  this.audio.src = `assets/pronunciations/${name}.mp3`;
+  this.audio.load();
+  this.audio.play();
 }
 
   constructor() {}
