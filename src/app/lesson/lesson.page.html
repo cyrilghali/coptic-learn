@@ -1,0 +1,37 @@
+<!-- src/app/lesson/lesson.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lesson</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-progress-bar [value]="progress"></ion-progress-bar>
+  <div class="question-container">
+    <ng-container [ngSwitch]="currentQuestion.type">
+      <div *ngSwitchCase="'multiple-choice'">
+        <h2 class="question">{{ currentQuestion.question }}</h2>
+        <div class="answer-grid">
+          <ion-button *ngFor="let choice of currentQuestion.choices" (click)="selectChoice(choice)" class="answer-button">
+            {{ choice }}
+          </ion-button>
+        </div>
+      </div>
+      <div *ngSwitchCase="'writing'">
+        <h2 class="question">{{ currentQuestion.question }}</h2>
+        <ion-input [(ngModel)]="writtenAnswer" class="answer-input"></ion-input>
+        <ion-button (click)="submitWrittenAnswer()" class="submit-button">Submit</ion-button>
+      </div>
+      <div *ngSwitchCase="'listening'">
+        <h2 class="question">{{ currentQuestion.question }}</h2>
+        <ion-button (click)="currentQuestion.audioSrc && playAudio(currentQuestion.audioSrc)" class="play-button">Play Sound</ion-button>
+        <div class="answer-grid">
+          <ion-button *ngFor="let choice of currentQuestion.choices" (click)="selectChoice(choice)" class="answer-button">
+            {{ choice }}
+          </ion-button>
+        </div>
+      </div>
+      <!-- Add more question types as needed -->
+    </ng-container>
+  </div>
+</ion-content>

@@ -2,18 +2,17 @@ import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { CopticAlphabetPage } from './coptic-alphabet.page';
 
-import { TabsPageRoutingModule } from './tabs-routing.module';
-
-import { TabsPage } from './tabs.page';
+import { CopticAlphabetPageRoutingModule } from './coptic-alphabet-routing.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    TabsPageRoutingModule
+    CopticAlphabetPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [CopticAlphabetPage]
 })
 export class CopticAlphabetPageModule {}

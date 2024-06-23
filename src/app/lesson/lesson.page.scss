@@ -1,0 +1,37 @@
+/* src/app/lesson/lesson.page.scss */
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh; /* Add this line to make the container take the whole height of the screen */
+}
+
+ion-button {
+  margin: 10px;
+}
+
+.answer-button {
+  width: 100%;
+  margin: 10px;
+}
+
+.answer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  align-self: flex-end; /* Add this line to align the grid items to the end */
+}
+
+ion-button {
+  margin-top: auto;
+}
+
+.answer-input {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid white; /* Add this line to make the input border visible */
+}

@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ExploreContainerComponent } from './explore-container.component';
+import { CopticAlphabetPage } from './coptic-alphabet.page';
 
-describe('ExploreContainerComponent', () => {
-  let component: ExploreContainerComponent;
-  let fixture: ComponentFixture<ExploreContainerComponent>;
+describe('CopticAlphabetPage', () => {
+  let component: CopticAlphabetPage;
+  let fixture: ComponentFixture<CopticAlphabetPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ExploreContainerComponent],
+      declarations: [CopticAlphabetPage],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ExploreContainerComponent);
+    fixture = TestBed.createComponent(CopticAlphabetPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
