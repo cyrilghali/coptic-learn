@@ -1,0 +1,7 @@
+{
+  "name": "Coptic Learn",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
