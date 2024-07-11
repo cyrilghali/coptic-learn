@@ -9,7 +9,7 @@
     <ion-col size="4" *ngFor="let letter of copticLetters">
       <ion-card (click)="playPronunciation(letter.name)" class="ion-text-center">
         <ion-card-header>
-          <ion-card-title class="coptic-text">{{ letter.min }}</ion-card-title>
+          <ion-card-title class="coptic-text">{{ letter.displayLetter }}</ion-card-title>
         </ion-card-header>
         <ion-card-content>
           <ion-card-subtitle>{{ letter.transliteration[0] }}</ion-card-subtitle>
