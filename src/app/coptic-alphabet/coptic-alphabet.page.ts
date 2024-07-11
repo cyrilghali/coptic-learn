@@ -7,44 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CopticAlphabetPage {
   audio = new Audio();
-  readonly copticLetters = [
-    { maj: 'Ⲁ', min: 'ⲁ', name: 'alpʰa', transliteration: ['a'], pronunciation: ['[a, ʕ, ʔ]'], displayLetter: 'a' },
-    { maj: 'Ⲃ', min: 'ⲃ', name: 'bēta', transliteration: ['b'], pronunciation: ['[b, v, w]'], displayLetter: 'b' },
-    { maj: 'Ⲅ', min: 'ⲅ', name: 'gamma', transliteration: ['g'], pronunciation: ['[k]', '[g, ŋ, ɣ]'], displayLetter: 'j' },
-    { maj: 'Ⲇ', min: 'ⲇ', name: 'dalda', transliteration: ['d'], pronunciation: ['[d]', '[d, ð]'], displayLetter: 'd' },
-    { maj: 'Ⲉ', min: 'ⲉ', name: 'ei', transliteration: ['e'], pronunciation: ['[e]'], displayLetter: 'e' },
-    { maj: 'Ⲋ', min: 'ⲋ', name: 'soou', transliteration: ['sc', 'ss', 'c'], pronunciation: ['[sc]'], displayLetter: '6' },
-    { maj: 'Ⲍ', min: 'ⲍ', name: 'zēta', transliteration: ['z'], pronunciation: ['[s]', '[z]'], displayLetter: 'z' },
-    { maj: 'Ⲏ', min: 'ⲏ', name: 'ēta', transliteration: ['ē', 'ee'], pronunciation: ['[eː]', '[ɛː, i]'], displayLetter: '3' },
-    { maj: 'Ⲑ', min: 'ⲑ', name: 'tʰēta', transliteration: ['tʰ'], pronunciation: ['[tʰ]', '[tʰ, θ]'], displayLetter: '0' },
-    { maj: 'Ⲓ', min: 'ⲓ', name: 'iōta', transliteration: ['i', 'ï'], pronunciation: ['[i]', '[j]'], displayLetter: 'i' },
-    { maj: 'Ⲕ', min: 'ⲕ', name: 'kappa', transliteration: ['k'], pronunciation: ['[k]'], displayLetter: 'k' },
-    { maj: 'Ⲗ', min: 'ⲗ', name: 'laula', transliteration: ['l'], pronunciation: ['[l]'], displayLetter: 'l' },
-    { maj: 'Ⲙ', min: 'ⲙ', name: 'mē', transliteration: ['m'], pronunciation: ['[m]'], displayLetter: 'm' },
-    { maj: 'Ⲛ', min: 'ⲛ', name: 'nē', transliteration: ['n'], pronunciation: ['[n]'], displayLetter: 'n' },
-    { maj: 'Ⲝ', min: 'ⲝ', name: 'kˢi', transliteration: ['kˢ', 'x'], pronunciation: ['[X]'], displayLetter: '7' },
-    { maj: 'Ⲟ', min: 'ⲟ', name: 'ou', transliteration: ['o'], pronunciation: ['[o]'], displayLetter: 'o' },
-    { maj: 'Ⲡ', min: 'ⲡ', name: 'pi', transliteration: ['p'], pronunciation: ['[p]'], displayLetter: 'p' },
-    { maj: 'Ⲣ', min: 'ⲣ', name: 'rō', transliteration: ['r'], pronunciation: ['[r]'], displayLetter: 'r' },
-    { maj: 'Ⲥ', min: 'ⲥ', name: 'sēmma', transliteration: ['s'], pronunciation: ['[s]'], displayLetter: 'c' },
-    { maj: 'Ⲧ', min: 'ⲧ', name: 'tau', transliteration: ['t'], pronunciation: ['[t]', '[t, d]'], displayLetter: 't' },
-    { maj: 'Ⲩ', min: 'ⲩ', name: 'he', transliteration: ['u', 'uh'], pronunciation: ['[u, w]', '[u, w, i, v]'], displayLetter: 'v' },
-    { maj: 'Ⲫ', min: 'ⲫ', name: 'pʰi', transliteration: ['pʰ'], pronunciation: ['[pʰ]', '[pʰ, f]'], displayLetter: 'f' },
-    { maj: 'Ⲭ', min: 'ⲭ', name: 'kʰi', transliteration: ['h', 'kh', 'Q'], pronunciation: ['[kʰ]', '[kʰ, χ, ʃ]'], displayLetter: 'x' },
-    { maj: 'Ⲯ', min: 'ⲯ', name: 'pˢi', transliteration: ['pˢ'], pronunciation: ['[ps]'], displayLetter: 'y' },
-    { maj: 'Ⲱ', min: 'ⲱ', name: 'ō', transliteration: ['ō', 'w'], pronunciation: ['[oː]', '[w]'], displayLetter: 'w' },
-    { maj: 'Ϥ', min: 'ϥ', name: 'fai', transliteration: ['f'], pronunciation: ['[f]'], displayLetter: '4' },
-    // Additional letters without numeric values
-    { maj: 'Ϣ', min: 'ϣ', name: 'šai', transliteration: ['š'], pronunciation: ['[ʃ]'], displayLetter: '2' },
-    { maj: 'Ϧ', min: 'ϧ', name: 'ḫai', transliteration: ['ḫ'], pronunciation: ['[x]'], displayLetter: 'q' },
-    { maj: 'Ϩ', min: 'ϩ', name: 'hori', transliteration: ['h'], pronunciation: ['[h]'], displayLetter: 'h' },
-    { maj: 'Ϫ', min: 'ϫ', name: 'ḏanḏia', transliteration: ['ḏ', 'j'], pronunciation: ['[d͡ʒ]', '[d͡ʒ, g]', '[j]'], displayLetter: 'g' },
-    { maj: 'Ϭ', min: 'ϭ', name: 'qima', transliteration: ['q', 'ch'], pronunciation: ['[q]', '[t͡ʃ]', '[ch]'], displayLetter: 's' },
-    { maj: 'Ϯ', min: 'ϯ', name: 'ti', transliteration: ['tt\''], pronunciation: ['[ti, T\']'], displayLetter: '5' },
-   // { maj: 'Ⳁ', min: 'ⳁ', name: 'pˢis ənše', transliteration: ['ssss'], pronunciation: ['[c:]', '[t͡s]'], displayLetter: 'usg±§!@#$%ˆ&*()_+' }
-  ];
 
-  public static readonly copticLetters2 = [
+  readonly copticLetters = [
     {
       uppercaseImage: "assets/letters/Coptic Alpha-maj.svg",
       lowercaseImage: "assets/letters/Coptic Alpha-min.svg",
@@ -57,7 +21,8 @@ export class CopticAlphabetPage {
       sahidicPron: "a",
       bohairicPron: "æ, ɑ",
       lateCopticPron: "ä",
-      grecoBohairicPron: "a"
+      grecoBohairicPron: "a",
+      displayFontLetter: "a"
     },
     {
       uppercaseImage: "assets/letters/Coptic Beta-maj.svg",
@@ -71,7 +36,8 @@ export class CopticAlphabetPage {
       sahidicPron: "β",
       bohairicPron: "β (final b)",
       lateCopticPron: "w (final b)",
-      grecoBohairicPron: "v (b often before a consonant or in a name)"
+      grecoBohairicPron: "v (b often before a consonant or in a name)",
+      displayFontLetter: "b"
     },
     {
       uppercaseImage: "assets/letters/Coptic Gamma-maj.svg",
@@ -85,7 +51,8 @@ export class CopticAlphabetPage {
       sahidicPron: "k (marked Greek words)",
       bohairicPron: "",
       lateCopticPron: "g (ɣ before ⲁ, ⲟ, or ⲱ)",
-      grecoBohairicPron: "ɣ, g (before e̞ or i), ŋ (before g or k)"
+      grecoBohairicPron: "ɣ, g (before e̞ or i), ŋ (before g or k)",
+      displayFontLetter: "j"
     },
     {
       uppercaseImage: "assets/letters/Coptic Dalda-maj.svg",
@@ -99,7 +66,8 @@ export class CopticAlphabetPage {
       sahidicPron: "t (marked Greek words)",
       bohairicPron: "",
       lateCopticPron: "d (marked Greek words)",
-      grecoBohairicPron: "ð (d in a name)"
+      grecoBohairicPron: "ð (d in a name)",
+      displayFontLetter: 'd'
     },
     {
       uppercaseImage: "assets/letters/Coptic Ei-maj.svg",
@@ -113,7 +81,8 @@ export class CopticAlphabetPage {
       sahidicPron: "ɛ, ə (ⲉⲓ = iː, j)",
       bohairicPron: "ɛ, ə (ⲓⲉ = e)",
       lateCopticPron: "æ, ɑ (ⲓⲉ = e)",
-      grecoBohairicPron: "e̞"
+      grecoBohairicPron: "e̞",
+      displayFontLetter: "e"
     },
     {
       uppercaseImage: "assets/letters/Coptic Sou.svg",
@@ -127,7 +96,8 @@ export class CopticAlphabetPage {
       sahidicPron: "dz",
       bohairicPron: "",
       lateCopticPron: "",
-      grecoBohairicPron: ""
+      grecoBohairicPron: "",
+      displayFontLetter: "6"
     },
     {
       uppercaseImage: "assets/letters/Coptic Zeta-maj.svg",
@@ -141,7 +111,8 @@ export class CopticAlphabetPage {
       sahidicPron: "s (marked Greek words)",
       bohairicPron: "",
       lateCopticPron: "z (marked Greek words)",
-      grecoBohairicPron: "z"
+      grecoBohairicPron: "z",
+      displayFontLetter: "z"
     },
     {
       uppercaseImage: "assets/letters/Coptic Eta-maj.svg",
@@ -155,7 +126,8 @@ export class CopticAlphabetPage {
       sahidicPron: "eː",
       bohairicPron: "e",
       lateCopticPron: "æ, ɑ, ɪ",
-      grecoBohairicPron: "iː"
+      grecoBohairicPron: "iː",
+      displayFontLetter: "3"
     },
     {
       uppercaseImage: "assets/letters/Coptic Theta-maj.svg",
@@ -169,7 +141,8 @@ export class CopticAlphabetPage {
       sahidicPron: "tʰ",
       bohairicPron: "t",
       lateCopticPron: "θ",
-      grecoBohairicPron: "θ"
+      grecoBohairicPron: "θ",
+      displayFontLetter: "0"
     },
     {
       uppercaseImage: "assets/letters/Coptic Iota-maj.svg",
@@ -183,7 +156,8 @@ export class CopticAlphabetPage {
       sahidicPron: "iː, j",
       bohairicPron: "i, j, ə (ⲓⲉ = e)",
       lateCopticPron: "ɪ, j (ⲓⲉ = e)",
-      grecoBohairicPron: "i, j (before vowels), ɪ (after vowels to form diphthongs)"
+      grecoBohairicPron: "i, j (before vowels), ɪ (after vowels to form diphthongs)",
+      displayFontLetter: "i"
     },
     {
       uppercaseImage: "assets/letters/Coptic Kappa-maj.svg",
@@ -197,7 +171,8 @@ export class CopticAlphabetPage {
       sahidicPron: "k",
       bohairicPron: "kʼ, k",
       lateCopticPron: "k",
-      grecoBohairicPron: "k"
+      grecoBohairicPron: "k",
+      displayFontLetter: "k"
     },
     {
       uppercaseImage: "assets/letters/Coptic Laula-maj.svg",
@@ -211,7 +186,8 @@ export class CopticAlphabetPage {
       sahidicPron: "l",
       bohairicPron: "l",
       lateCopticPron: "l",
-      grecoBohairicPron: "l"
+      grecoBohairicPron: "l",
+      displayFontLetter: "l"
     },
     {
       uppercaseImage: "assets/letters/Coptic Me-maj.svg",
@@ -225,7 +201,8 @@ export class CopticAlphabetPage {
       sahidicPron: "m",
       bohairicPron: "m",
       lateCopticPron: "m",
-      grecoBohairicPron: "m"
+      grecoBohairicPron: "m",
+      displayFontLetter: "m"
     },
     {
       uppercaseImage: "assets/letters/Coptic Ne-maj.svg",
@@ -239,7 +216,8 @@ export class CopticAlphabetPage {
       sahidicPron: "n",
       bohairicPron: "n",
       lateCopticPron: "n",
-      grecoBohairicPron: "n"
+      grecoBohairicPron: "n",
+      displayFontLetter: "n"
     },
     {
       uppercaseImage: "assets/letters/Coptic Kxi-maj.svg",
@@ -253,7 +231,8 @@ export class CopticAlphabetPage {
       sahidicPron: "ks (only in Greek loanwords)",
       bohairicPron: "ks (only in Greek loanwords)",
       lateCopticPron: "ks (usually following a consonant or sometimes when starting a word)",
-      grecoBohairicPron: "ks (usually following a consonant or sometimes when starting a word)"
+      grecoBohairicPron: "ks (usually following a consonant or sometimes when starting a word)",
+      displayFontLetter: "7",
     },
     {
       uppercaseImage: "assets/letters/Coptic Ou-maj.svg",
@@ -267,7 +246,8 @@ export class CopticAlphabetPage {
       sahidicPron: "ɔ (ⲟⲩ = uː, w)",
       bohairicPron: "o (ⲟⲩ = u, w)",
       lateCopticPron: "o̞ (ⲟⲩ = u)",
-      grecoBohairicPron: "o̞"
+      grecoBohairicPron: "o̞",
+      displayFontLetter: "o",
     },
     {
       uppercaseImage: "assets/letters/Coptic Pi-maj.svg",
@@ -281,7 +261,8 @@ export class CopticAlphabetPage {
       sahidicPron: "p",
       bohairicPron: "p",
       lateCopticPron: "b",
-      grecoBohairicPron: "p"
+      grecoBohairicPron: "p",
+      displayFontLetter: "p",
     },
     {
       uppercaseImage: "assets/letters/Coptic Ro-maj.svg",
@@ -295,7 +276,8 @@ export class CopticAlphabetPage {
       sahidicPron: "ɾ, r",
       bohairicPron: "ɾ, r",
       lateCopticPron: "ɾ, r",
-      grecoBohairicPron: "ɾ, r"
+      grecoBohairicPron: "ɾ, r",
+      displayFontLetter: "r",
     },
     {
       uppercaseImage: "assets/letters/Coptic Semma-maj.svg",
@@ -309,7 +291,8 @@ export class CopticAlphabetPage {
       sahidicPron: "s",
       bohairicPron: "s",
       lateCopticPron: "s",
-      grecoBohairicPron: "s"
+      grecoBohairicPron: "s",
+      displayFontLetter: "c",
     },
     {
       uppercaseImage: "assets/letters/Coptic Tau-maj.svg",
@@ -323,7 +306,8 @@ export class CopticAlphabetPage {
       sahidicPron: "t",
       bohairicPron: "tʼ, t",
       lateCopticPron: "d (final t)",
-      grecoBohairicPron: "t"
+      grecoBohairicPron: "t",
+      displayFontLetter: "t"
     },
     {
       uppercaseImage: "assets/letters/Coptic He-maj.svg",
@@ -337,7 +321,8 @@ export class CopticAlphabetPage {
       sahidicPron: "w (ⲟⲩ = uː, w)",
       bohairicPron: "ɪ, w (ⲟⲩ = u, w)",
       lateCopticPron: "i, w (between ⲟ and another vowel except ⲱ), v (after ɑ (ⲁ) or e̞ (ⲉ)), u (digraph ⲟⲩ)",
-      grecoBohairicPron: "i, w (between ⲟ and another vowel except ⲱ), v (after ɑ (ⲁ) or e̞ (ⲉ)), u (digraph ⲟⲩ)"
+      grecoBohairicPron: "i, w (between ⲟ and another vowel except ⲱ), v (after ɑ (ⲁ) or e̞ (ⲉ)), u (digraph ⲟⲩ)",
+        displayFontLetter: "v",
     },
     {
       uppercaseImage: "assets/letters/Coptic Phi-maj.svg",
@@ -351,7 +336,8 @@ export class CopticAlphabetPage {
       sahidicPron: "pʰ",
       bohairicPron: "pʰ",
       lateCopticPron: "b, f",
-      grecoBohairicPron: "f"
+      grecoBohairicPron: "f",
+      displayFontLetter: "f",
     },
     {
       uppercaseImage: "assets/letters/Coptic Khi-maj.svg",
@@ -365,7 +351,8 @@ export class CopticAlphabetPage {
       sahidicPron: "kʰ",
       bohairicPron: "kʰ",
       lateCopticPron: "k (if the word is Coptic in origin), x (if the word is Greek in origin), ç (if the word is Greek in origin but before e̞ or i)",
-      grecoBohairicPron: "k (if the word is Coptic in origin), x (if the word is Greek in origin), ç (if the word is Greek in origin but before e̞ or i)"
+      grecoBohairicPron: "k (if the word is Coptic in origin), x (if the word is Greek in origin), ç (if the word is Greek in origin but before e̞ or i)",
+      displayFontLetter: "x",
     },
     {
       uppercaseImage: "assets/letters/Coptic Pxi-maj.svg",
@@ -379,7 +366,8 @@ export class CopticAlphabetPage {
       sahidicPron: "bs (only in Greek loanwords)",
       bohairicPron: "ps (only in Greek loanwords)",
       lateCopticPron: "ps (usually following a consonant)",
-      grecoBohairicPron: "ps (usually following a consonant)"
+      grecoBohairicPron: "ps (usually following a consonant)",
+      displayFontLetter: "y",
     },
     {
       uppercaseImage: "assets/letters/Coptic O-maj.svg",
@@ -393,7 +381,8 @@ export class CopticAlphabetPage {
       sahidicPron: "oː",
       bohairicPron: "o",
       lateCopticPron: "oː",
-      grecoBohairicPron: "o̞ː"
+      grecoBohairicPron: "o̞ː",
+      displayFontLetter: "w",
     },
     {
       uppercaseImage: "assets/letters/Coptic Sai-maj.svg",
@@ -407,7 +396,8 @@ export class CopticAlphabetPage {
       sahidicPron: "ʃ",
       bohairicPron: "ʃ",
       lateCopticPron: "ʃ",
-      grecoBohairicPron: "ʃ"
+      grecoBohairicPron: "ʃ",
+      displayFontLetter: "2",
     },
     {
       uppercaseImage: "assets/letters/Coptic Fai-maj.svg",
@@ -421,7 +411,8 @@ export class CopticAlphabetPage {
       sahidicPron: "f",
       bohairicPron: "f",
       lateCopticPron: "f",
-      grecoBohairicPron: "f"
+      grecoBohairicPron: "f",
+      displayFontLetter: "4",
     },
     {
       uppercaseImage: "assets/letters/Coptic Hai-maj.svg",
@@ -435,7 +426,8 @@ export class CopticAlphabetPage {
       sahidicPron: "x",
       bohairicPron: "x",
       lateCopticPron: "x",
-      grecoBohairicPron: "x"
+      grecoBohairicPron: "x",
+      displayFontLetter: "q",
     },
     {
       uppercaseImage: "assets/letters/Coptic Hori-maj.svg",
@@ -449,7 +441,8 @@ export class CopticAlphabetPage {
       sahidicPron: "h",
       bohairicPron: "h",
       lateCopticPron: "h",
-      grecoBohairicPron: "h"
+      grecoBohairicPron: "h",
+      displayFontLetter: "h",
     },
     {
       uppercaseImage: "assets/letters/Coptic Dandia-maj.svg",
@@ -463,7 +456,8 @@ export class CopticAlphabetPage {
       sahidicPron: "t͡ʃ",
       bohairicPron: "t͡ʃʼ, t͡ʃ",
       lateCopticPron: "ɟ",
-      grecoBohairicPron: "g, dʒ (before e̞ or i)"
+      grecoBohairicPron: "g, dʒ (before e̞ or i)",
+      displayFontLetter: "g",
     },
     {
       uppercaseImage: "assets/letters/Coptic Cima-maj.svg",
@@ -477,7 +471,8 @@ export class CopticAlphabetPage {
       sahidicPron: "kʲ",
       bohairicPron: "t͡ʃʰ",
       lateCopticPron: "ʃ",
-      grecoBohairicPron: "tʃ (usually following a consonant)"
+      grecoBohairicPron: "tʃ (usually following a consonant)",
+      displayFontLetter: "s",
     },
     {
       uppercaseImage: "assets/letters/Coptic Ti-maj.svg",
@@ -491,8 +486,9 @@ export class CopticAlphabetPage {
       sahidicPron: "tiː",
       bohairicPron: "tʼi, tʼi, tʼə",
       lateCopticPron: "di",
-      grecoBohairicPron: "ti"
-    },
+      grecoBohairicPron: "ti",
+      displayFontLetter: "5",
+    },/*
     {
       uppercaseImage: "assets/letters/Coptic Sampi.svg",
       lowercaseImage: "assets/letters/Coptic Sampi.svg",
@@ -505,8 +501,9 @@ export class CopticAlphabetPage {
       sahidicPron: "",
       bohairicPron: "",
       lateCopticPron: "",
-      grecoBohairicPron: ""
-    }
+      grecoBohairicPron: "",
+      displayFontLetter: ""
+    }*/
   ];
 
   playPronunciation(name: string) {
