@@ -1,31 +1,28 @@
-// src/app/lesson/lesson.page.ts
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CopticWord } from 'src/app/shared/types/coptic-word';
-import { CopticWordsService } from 'src/app/shared/services/coptic-words.service';
 import { Question } from 'src/app/shared/types/question';
 import { AudioService } from 'src/app/shared/services/audio.service';
+import { COPTIC_WORDS } from 'src/app/shared/constants/coptic-words-list';
 
 @Component({
   selector: 'app-lesson',
   templateUrl: './lesson.page.html',
   styleUrls: ['./lesson.page.scss'],
 })
-export class LessonPage implements OnInit {
+export class LessonPage {
   progress = 0;
   currentQuestionIndex = 0;
-  currentChoice = '';
+  currentChoice: CopticWord = { unicodeWord: '', sound: '' };
 
   questions: Question[] = [];
-  public copticWords: CopticWord[] = [];
 
-  constructor(
-    private copticWordsService: CopticWordsService,
-    private audioService: AudioService,
-  ) {}
+  constructor(public audioService: AudioService) {
+    this.questions = this.generateQuestions(COPTIC_WORDS);
+  }
 
-  ngOnInit(): void {
-    this.copticWords = this.copticWordsService.getCopticWords();
-    this.questions = this.generateQuestions(this.copticWords);}
+  get currentQuestion() {
+    return this.questions[this.currentQuestionIndex];
+  }
 
   generateQuestions(copticWords: CopticWord[]): Question[] {
     const questions: Question[] = [];
@@ -55,7 +52,8 @@ export class LessonPage implements OnInit {
 
     return questions;
   }
-  shuffle(array: string[]): string[] {
+
+  shuffle(array: any[]): any[] {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
@@ -67,29 +65,20 @@ export class LessonPage implements OnInit {
     const shuffled = this.shuffle(array.slice());
     return shuffled.slice(0, num);
   }
-  get currentQuestion() {
-    return this.questions[this.currentQuestionIndex];
-  }
 
-  selectChoice(choice: string) {
-    // Play the audio of the selected word
-    this.playAudio(`assets/words/${choice}.mp3`);
+  selectChoice(choice: CopticWord) {
+    this.audioService.playSound(`assets/words/${choice.unicodeWord}.mp3`);
     this.currentChoice = choice;
   }
 
   submit() {
     if (this.currentChoice === this.currentQuestion.correctAnswer) {
       this.progress += 100 / this.questions.length;
-      this.playAudio('assets/sounds-effects/duolingo-correct.mp3');
+      this.audioService.playSound('assets/sounds-effects/duolingo-correct.mp3');
       this.advanceQuestion();
     } else {
-      this.playAudio('assets/sounds-effects/duolingo-wrong.mp3');
+      this.audioService.playSound('assets/sounds-effects/duolingo-wrong.mp3');
     }
-  }
-  playAudio(src: string) {
-    this.audio.src = src;
-    this.audio.load();
-    this.audio.play();
   }
 
   advanceQuestion() {

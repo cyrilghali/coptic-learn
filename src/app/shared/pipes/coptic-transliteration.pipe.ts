@@ -1,13 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 import { copticLetter } from 'src/app/shared/types/coptic-letter';
 import { copticLetters } from 'src/app/shared/constants/coptic-letters';
-import { copticWordsList } from 'src/app/shared/constants/coptic-words-list';
-import { CopticWord } from 'src/app/shared/types/coptic-word';
 
-@Injectable({
-  providedIn: 'root',
+@Pipe({
+  name: 'copticTransliteration',
+  standalone: true,
 })
-export class CopticWordsService {
+export class CopticTransliterationPipe implements PipeTransform {
   private transliterationFontMap: { [key: string]: string };
 
   constructor() {
@@ -15,31 +14,25 @@ export class CopticWordsService {
       this.createTransliterationFontMap(copticLetters);
   }
 
+  transform(word: string): string {
+    return this.transliterate(word.toLowerCase());
+  }
+
   private createTransliterationFontMap(letters: copticLetter[]): {
     [key: string]: string;
   } {
     const map: { [key: string]: string } = {};
     letters.forEach((letter) => {
-      map[letter.uppercaseUnicode] = letter.copticFontMapping;
       map[letter.lowercaseUnicode] = letter.copticFontMapping;
     });
     return map;
   }
 
-  public transliterate(word: string): string {
+  private transliterate(word: string): string {
     return word
+      .toLowerCase()
       .split('')
       .map((letter) => this.transliterationFontMap[letter] || letter)
       .join('');
-  }
-
-  public getCopticWords(): CopticWord[] {
-    return copticWordsList.map((word) => {
-      return {
-        unicodeWord: word,
-        sound: `assets/words/${word}.mp3`,
-        copticFontMapping: this.transliterate(word),
-      };
-    });
   }
 }

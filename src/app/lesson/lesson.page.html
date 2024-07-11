@@ -12,25 +12,24 @@
       <div *ngSwitchCase="'listening'">
         <h2 class="question">{{ currentQuestion.question }}</h2>
         <ion-button
-          (click)="currentQuestion.audioSrc && playAudio(currentQuestion.audioSrc)"
+          (click)="currentQuestion.audioSrc && audioService.playSound(currentQuestion.audioSrc)"
           class="play-button"
           >Play Sound</ion-button
         >
         <div class="answer-grid">
           <ion-button
-            *ngFor="let choice of currentQuestion.choices"
             (click)="selectChoice(choice)"
-            class="answer-button"
+            *ngFor="let choice of currentQuestion.choices"
             [class.selected]="choice === this.currentChoice"
+            class="answer-button"
           >
-            {{ choice }}
+            {{ choice.unicodeWord }}
           </ion-button>
           <ion-button (click)="submit()" class="submit-button"
             >Submit</ion-button
           >
         </div>
       </div>
-      <!-- Add more question types as needed -->
     </ng-container>
   </div>
 </ion-content>

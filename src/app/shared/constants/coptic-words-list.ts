@@ -1,6 +1,3 @@
-import { copticLetter } from 'src/app/shared/types/coptic-letter';
-import { copticLetters } from 'src/app/shared/constants/coptic-letters';
-
 export const copticWordsList = [
   'ϣⲁ',
   'ϫⲉ',
@@ -135,29 +132,9 @@ export const copticWordsList = [
   'ⲥ̀ⲑⲟⲓⲛⲟⲩϥⲓ',
 ];
 
-function createTransliterationFontMap(letters: copticLetter[]): {
-  [key: string]: string;
-} {
-  const map: { [key: string]: string } = {};
-  letters.forEach((letter) => {
-    map[letter.uppercaseUnicode] = letter.copticFontMapping;
-    map[letter.lowercaseUnicode] = letter.copticFontMapping;
-  });
-  return map;
-}
-const transliterationFontMap = createTransliterationFontMap(copticLetters);
-
-function transliterate(word: string): string {
-  return word
-    .split('')
-    .map((letter) => transliterationFontMap[letter] || letter)
-    .join('');
-}
-
-export const copticWords = copticWordsList.map((word) => {
+export const COPTIC_WORDS = copticWordsList.map((word) => {
   return {
     unicodeWord: word,
     sound: `assets/words/${word}.mp3`,
-    copticFontMapping: transliterate(word),
   };
 });
