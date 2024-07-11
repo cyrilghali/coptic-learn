@@ -14,7 +14,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "æ, ɑ",
         lateCopticPron: "ä",
         grecoBohairicPron: "a",
-        displayFontLetter: "a",
+        copticFontMapping: "a",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -32,7 +32,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "β (final b)",
         lateCopticPron: "w (final b)",
         grecoBohairicPron: "v (b often before a consonant or in a name)",
-        displayFontLetter: "b",
+        copticFontMapping: "b",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -50,7 +50,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "",
         lateCopticPron: "g (ɣ before ⲁ, ⲟ, or ⲱ)",
         grecoBohairicPron: "ɣ, g (before e̞ or i), ŋ (before g or k)",
-        displayFontLetter: "j",
+        copticFontMapping: "j",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -68,7 +68,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "",
         lateCopticPron: "d (marked Greek words)",
         grecoBohairicPron: "ð (d in a name)",
-        displayFontLetter: 'd',
+        copticFontMapping: 'd',
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -86,7 +86,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "ɛ, ə (ⲓⲉ = e)",
         lateCopticPron: "æ, ɑ (ⲓⲉ = e)",
         grecoBohairicPron: "e̞",
-        displayFontLetter: "e",
+        copticFontMapping: "e",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -104,7 +104,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "",
         lateCopticPron: "",
         grecoBohairicPron: "",
-        displayFontLetter: "6",
+        copticFontMapping: "6",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -122,7 +122,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "",
         lateCopticPron: "z (marked Greek words)",
         grecoBohairicPron: "z",
-        displayFontLetter: "z",
+        copticFontMapping: "z",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -140,7 +140,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "e",
         lateCopticPron: "æ, ɑ, ɪ",
         grecoBohairicPron: "iː",
-        displayFontLetter: "3",
+        copticFontMapping: "3",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -158,7 +158,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "t",
         lateCopticPron: "θ",
         grecoBohairicPron: "θ",
-        displayFontLetter: "0",
+        copticFontMapping: "0",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -176,7 +176,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "i, j, ə (ⲓⲉ = e)",
         lateCopticPron: "ɪ, j (ⲓⲉ = e)",
         grecoBohairicPron: "i, j (before vowels), ɪ (after vowels to form diphthongs)",
-        displayFontLetter: "i",
+        copticFontMapping: "i",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -194,7 +194,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "kʼ, k",
         lateCopticPron: "k",
         grecoBohairicPron: "k",
-        displayFontLetter: "k",
+        copticFontMapping: "k",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -212,7 +212,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "l",
         lateCopticPron: "l",
         grecoBohairicPron: "l",
-        displayFontLetter: "l",
+        copticFontMapping: "l",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -230,7 +230,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "m",
         lateCopticPron: "m",
         grecoBohairicPron: "m",
-        displayFontLetter: "m",
+        copticFontMapping: "m",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -248,7 +248,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "n",
         lateCopticPron: "n",
         grecoBohairicPron: "n",
-        displayFontLetter: "n",
+        copticFontMapping: "n",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -266,7 +266,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "ks (only in Greek loanwords)",
         lateCopticPron: "ks (usually following a consonant or sometimes when starting a word)",
         grecoBohairicPron: "ks (usually following a consonant or sometimes when starting a word)",
-        displayFontLetter: "7",
+        copticFontMapping: "7",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -284,7 +284,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "o (ⲟⲩ = u, w)",
         lateCopticPron: "o̞ (ⲟⲩ = u)",
         grecoBohairicPron: "o̞",
-        displayFontLetter: "o",
+        copticFontMapping: "o",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -302,7 +302,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "p",
         lateCopticPron: "b",
         grecoBohairicPron: "p",
-        displayFontLetter: "p",
+        copticFontMapping: "p",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         }
@@ -320,7 +320,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "ɾ, r",
         lateCopticPron: "ɾ, r",
         grecoBohairicPron: "ɾ, r",
-        displayFontLetter: "r",
+        copticFontMapping: "r",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -338,7 +338,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "s",
         lateCopticPron: "s",
         grecoBohairicPron: "s",
-        displayFontLetter: "c",
+        copticFontMapping: "c",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -356,7 +356,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "tʼ, t",
         lateCopticPron: "d (final t)",
         grecoBohairicPron: "t",
-        displayFontLetter: "t",
+        copticFontMapping: "t",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -374,7 +374,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "ɪ, w (ⲟⲩ = u, w)",
         lateCopticPron: "i, w (between ⲟ and another vowel except ⲱ), v (after ɑ (ⲁ) or e̞ (ⲉ)), u (digraph ⲟⲩ)",
         grecoBohairicPron: "i, w (between ⲟ and another vowel except ⲱ), v (after ɑ (ⲁ) or e̞ (ⲉ)), u (digraph ⲟⲩ)",
-        displayFontLetter: "v",
+        copticFontMapping: "v",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -392,7 +392,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "pʰ",
         lateCopticPron: "b, f",
         grecoBohairicPron: "f",
-        displayFontLetter: "f",
+        copticFontMapping: "f",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -410,7 +410,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "kʰ",
         lateCopticPron: "k (if the word is Coptic in origin), x (if the word is Greek in origin), ç (if the word is Greek in origin but before e̞ or i)",
         grecoBohairicPron: "k (if the word is Coptic in origin), x (if the word is Greek in origin), ç (if the word is Greek in origin but before e̞ or i)",
-        displayFontLetter: "x",
+        copticFontMapping: "x",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -428,7 +428,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "ps (only in Greek loanwords)",
         lateCopticPron: "ps (usually following a consonant)",
         grecoBohairicPron: "ps (usually following a consonant)",
-        displayFontLetter: "y",
+        copticFontMapping: "y",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -446,7 +446,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "o",
         lateCopticPron: "oː",
         grecoBohairicPron: "o̞ː",
-        displayFontLetter: "w",
+        copticFontMapping: "w",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -464,7 +464,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "ʃ",
         lateCopticPron: "ʃ",
         grecoBohairicPron: "ʃ",
-        displayFontLetter: "2",
+        copticFontMapping: "2",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -482,7 +482,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "f",
         lateCopticPron: "f",
         grecoBohairicPron: "f",
-        displayFontLetter: "4",
+        copticFontMapping: "4",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -500,7 +500,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "x",
         lateCopticPron: "x",
         grecoBohairicPron: "x",
-        displayFontLetter: "q",
+        copticFontMapping: "q",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -518,7 +518,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "h",
         lateCopticPron: "h",
         grecoBohairicPron: "h",
-        displayFontLetter: "h",
+        copticFontMapping: "h",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -536,7 +536,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "t͡ʃʼ, t͡ʃ",
         lateCopticPron: "ɟ",
         grecoBohairicPron: "g, dʒ (before e̞ or i)",
-        displayFontLetter: "g",
+        copticFontMapping: "g",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -554,7 +554,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "t͡ʃʰ",
         lateCopticPron: "ʃ",
         grecoBohairicPron: "tʃ (usually following a consonant)",
-        displayFontLetter: "s",
+        copticFontMapping: "s",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -572,7 +572,7 @@ export const copticLetters: copticLetter[] = [
         bohairicPron: "tʼi, tʼi, tʼə",
         lateCopticPron: "di",
         grecoBohairicPron: "ti",
-        displayFontLetter: "5",
+        copticFontMapping: "5",
         sound: {
             pronunciation: "assets/pronunciations/.mp3"
         },
@@ -590,6 +590,6 @@ export const copticLetters: copticLetter[] = [
       bohairicPron: "",
       lateCopticPron: "",
       grecoBohairicPron: "",
-      displayFontLetter: ""
+      copticFontMapping: ""
     }*/
 ];
