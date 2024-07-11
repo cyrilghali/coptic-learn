@@ -44,10 +44,10 @@ export class CopticAlphabetPage {
    // { maj: 'Ⳁ', min: 'ⳁ', name: 'pˢis ənše', transliteration: ['ssss'], pronunciation: ['[c:]', '[t͡s]'], displayLetter: 'usg±§!@#$%ˆ&*()_+' }
   ];
 
-  readonly copticLetters2 = [
+  public static readonly copticLetters2 = [
     {
-      uppercaseImage: "File:Coptic Alpha-maj.svg",
-      lowercaseImage: "File:Coptic Alpha-min.svg",
+      uppercaseImage: "assets/letters/Coptic Alpha-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Alpha-min.svg",
       uppercaseUnicode: "Ⲁ",
       lowercaseUnicode: "ⲁ",
       numericValue: 1,
@@ -60,8 +60,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "a"
     },
     {
-      uppercaseImage: "File:Coptic Beta-maj.svg",
-      lowercaseImage: "File:Coptic Beta-min.svg",
+      uppercaseImage: "assets/letters/Coptic Beta-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Beta-min.svg",
       uppercaseUnicode: "Ⲃ",
       lowercaseUnicode: "ⲃ",
       numericValue: 2,
@@ -74,8 +74,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "v (b often before a consonant or in a name)"
     },
     {
-      uppercaseImage: "File:Coptic Gamma-maj.svg",
-      lowercaseImage: "File:Coptic Gamma-min.svg",
+      uppercaseImage: "assets/letters/Coptic Gamma-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Gamma-min.svg",
       uppercaseUnicode: "Ⲅ",
       lowercaseUnicode: "ⲅ",
       numericValue: 3,
@@ -88,8 +88,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "ɣ, g (before e̞ or i), ŋ (before g or k)"
     },
     {
-      uppercaseImage: "File:Coptic Dalda-maj.svg",
-      lowercaseImage: "File:Coptic Dalda-min.svg",
+      uppercaseImage: "assets/letters/Coptic Dalda-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Dalda-min.svg",
       uppercaseUnicode: "Ⲇ",
       lowercaseUnicode: "ⲇ",
       numericValue: 4,
@@ -102,8 +102,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "ð (d in a name)"
     },
     {
-      uppercaseImage: "File:Coptic Ei-maj.svg",
-      lowercaseImage: "File:Coptic Ei-min.svg",
+      uppercaseImage: "assets/letters/Coptic Ei-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Ei-min.svg",
       uppercaseUnicode: "Ⲉ",
       lowercaseUnicode: "ⲉ",
       numericValue: 5,
@@ -116,8 +116,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "e̞"
     },
     {
-      uppercaseImage: "File:Coptic Sou.svg",
-      lowercaseImage: "File:Coptic Sou.svg",
+      uppercaseImage: "assets/letters/Coptic Sou.svg",
+      lowercaseImage: "assets/letters/Coptic Sou.svg",
       uppercaseUnicode: "Ⲋ",
       lowercaseUnicode: "ⲋ",
       numericValue: 6,
@@ -130,8 +130,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: ""
     },
     {
-      uppercaseImage: "File:Coptic Zeta-maj.svg",
-      lowercaseImage: "File:Coptic Zeta-min.svg",
+      uppercaseImage: "assets/letters/Coptic Zeta-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Zeta-min.svg",
       uppercaseUnicode: "Ⲍ",
       lowercaseUnicode: "ⲍ",
       numericValue: 7,
@@ -144,8 +144,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "z"
     },
     {
-      uppercaseImage: "File:Coptic Eta-maj.svg",
-      lowercaseImage: "File:Coptic Eta-min.svg",
+      uppercaseImage: "assets/letters/Coptic Eta-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Eta-min.svg",
       uppercaseUnicode: "Ⲏ",
       lowercaseUnicode: "ⲏ",
       numericValue: 8,
@@ -158,8 +158,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "iː"
     },
     {
-      uppercaseImage: "File:Coptic Theta-maj.svg",
-      lowercaseImage: "File:Coptic Theta-min.svg",
+      uppercaseImage: "assets/letters/Coptic Theta-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Theta-min.svg",
       uppercaseUnicode: "Ⲑ",
       lowercaseUnicode: "ⲑ",
       numericValue: 9,
@@ -172,8 +172,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "θ"
     },
     {
-      uppercaseImage: "File:Coptic Iota-maj.svg",
-      lowercaseImage: "File:Coptic Iota-min.svg",
+      uppercaseImage: "assets/letters/Coptic Iota-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Iota-min.svg",
       uppercaseUnicode: "Ⲓ",
       lowercaseUnicode: "ⲓ",
       numericValue: 10,
@@ -186,8 +186,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "i, j (before vowels), ɪ (after vowels to form diphthongs)"
     },
     {
-      uppercaseImage: "File:Coptic Kappa-maj.svg",
-      lowercaseImage: "File:Coptic Kappa-min.svg",
+      uppercaseImage: "assets/letters/Coptic Kappa-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Kappa-min.svg",
       uppercaseUnicode: "Ⲕ",
       lowercaseUnicode: "ⲕ",
       numericValue: 20,
@@ -200,8 +200,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "k"
     },
     {
-      uppercaseImage: "File:Coptic Laula-maj.svg",
-      lowercaseImage: "File:Coptic Laula-min.svg",
+      uppercaseImage: "assets/letters/Coptic Laula-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Laula-min.svg",
       uppercaseUnicode: "Ⲗ",
       lowercaseUnicode: "ⲗ",
       numericValue: 30,
@@ -214,8 +214,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "l"
     },
     {
-      uppercaseImage: "File:Coptic Me-maj.svg",
-      lowercaseImage: "File:Coptic Me-min.svg",
+      uppercaseImage: "assets/letters/Coptic Me-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Me-min.svg",
       uppercaseUnicode: "Ⲙ",
       lowercaseUnicode: "ⲙ",
       numericValue: 40,
@@ -228,8 +228,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "m"
     },
     {
-      uppercaseImage: "File:Coptic Ne-maj.svg",
-      lowercaseImage: "File:Coptic Ne-min.svg",
+      uppercaseImage: "assets/letters/Coptic Ne-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Ne-min.svg",
       uppercaseUnicode: "Ⲛ",
       lowercaseUnicode: "ⲛ",
       numericValue: 50,
@@ -242,8 +242,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "n"
     },
     {
-      uppercaseImage: "File:Coptic Kxi-maj.svg",
-      lowercaseImage: "File:Coptic Kxi-min.svg",
+      uppercaseImage: "assets/letters/Coptic Kxi-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Kxi-min.svg",
       uppercaseUnicode: "Ⲝ",
       lowercaseUnicode: "ⲝ",
       numericValue: 60,
@@ -256,8 +256,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "ks (usually following a consonant or sometimes when starting a word)"
     },
     {
-      uppercaseImage: "File:Coptic Ou-maj.svg",
-      lowercaseImage: "File:Coptic Ou-min.svg",
+      uppercaseImage: "assets/letters/Coptic Ou-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Ou-min.svg",
       uppercaseUnicode: "Ⲟ",
       lowercaseUnicode: "ⲟ",
       numericValue: 70,
@@ -270,8 +270,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "o̞"
     },
     {
-      uppercaseImage: "File:Coptic Pi-maj.svg",
-      lowercaseImage: "File:Coptic Pi-min.svg",
+      uppercaseImage: "assets/letters/Coptic Pi-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Pi-min.svg",
       uppercaseUnicode: "Ⲡ",
       lowercaseUnicode: "ⲡ",
       numericValue: 80,
@@ -284,8 +284,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "p"
     },
     {
-      uppercaseImage: "File:Coptic Ro-maj.svg",
-      lowercaseImage: "File:Coptic Ro-min.svg",
+      uppercaseImage: "assets/letters/Coptic Ro-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Ro-min.svg",
       uppercaseUnicode: "Ⲣ",
       lowercaseUnicode: "ⲣ",
       numericValue: 100,
@@ -298,8 +298,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "ɾ, r"
     },
     {
-      uppercaseImage: "File:Coptic Semma-maj.svg",
-      lowercaseImage: "File:Coptic Semma-min.svg",
+      uppercaseImage: "assets/letters/Coptic Semma-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Semma-min.svg",
       uppercaseUnicode: "Ⲥ",
       lowercaseUnicode: "ⲥ",
       numericValue: 200,
@@ -312,8 +312,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "s"
     },
     {
-      uppercaseImage: "File:Coptic Tau-maj.svg",
-      lowercaseImage: "File:Coptic Tau-min.svg",
+      uppercaseImage: "assets/letters/Coptic Tau-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Tau-min.svg",
       uppercaseUnicode: "Ⲧ",
       lowercaseUnicode: "ⲧ",
       numericValue: 300,
@@ -326,8 +326,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "t"
     },
     {
-      uppercaseImage: "File:Coptic He-maj.svg",
-      lowercaseImage: "File:Coptic He-min.svg",
+      uppercaseImage: "assets/letters/Coptic He-maj.svg",
+      lowercaseImage: "assets/letters/Coptic He-min.svg",
       uppercaseUnicode: "Ⲩ",
       lowercaseUnicode: "ⲩ",
       numericValue: 400,
@@ -340,8 +340,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "i, w (between ⲟ and another vowel except ⲱ), v (after ɑ (ⲁ) or e̞ (ⲉ)), u (digraph ⲟⲩ)"
     },
     {
-      uppercaseImage: "File:Coptic Phi-maj.svg",
-      lowercaseImage: "File:Coptic Phi-min.svg",
+      uppercaseImage: "assets/letters/Coptic Phi-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Phi-min.svg",
       uppercaseUnicode: "Ⲫ",
       lowercaseUnicode: "ⲫ",
       numericValue: 500,
@@ -354,8 +354,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "f"
     },
     {
-      uppercaseImage: "File:Coptic Khi-maj.svg",
-      lowercaseImage: "File:Coptic Khi-min.svg",
+      uppercaseImage: "assets/letters/Coptic Khi-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Khi-min.svg",
       uppercaseUnicode: "Ⲭ",
       lowercaseUnicode: "ⲭ",
       numericValue: 600,
@@ -368,8 +368,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "k (if the word is Coptic in origin), x (if the word is Greek in origin), ç (if the word is Greek in origin but before e̞ or i)"
     },
     {
-      uppercaseImage: "File:Coptic Pxi-maj.svg",
-      lowercaseImage: "File:Coptic Pxi-min.svg",
+      uppercaseImage: "assets/letters/Coptic Pxi-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Pxi-min.svg",
       uppercaseUnicode: "Ⲯ",
       lowercaseUnicode: "ⲯ",
       numericValue: 700,
@@ -382,8 +382,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "ps (usually following a consonant)"
     },
     {
-      uppercaseImage: "File:Coptic O-maj.svg",
-      lowercaseImage: "File:Coptic O-min.svg",
+      uppercaseImage: "assets/letters/Coptic O-maj.svg",
+      lowercaseImage: "assets/letters/Coptic O-min.svg",
       uppercaseUnicode: "Ⲱ",
       lowercaseUnicode: "ⲱ",
       numericValue: 800,
@@ -396,8 +396,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "o̞ː"
     },
     {
-      uppercaseImage: "File:Coptic Sai-maj.svg",
-      lowercaseImage: "File:Coptic Sai-min.svg",
+      uppercaseImage: "assets/letters/Coptic Sai-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Sai-min.svg",
       uppercaseUnicode: "Ϣ",
       lowercaseUnicode: "ϣ",
       numericValue: null,
@@ -410,8 +410,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "ʃ"
     },
     {
-      uppercaseImage: "File:Coptic Fai-maj.svg",
-      lowercaseImage: "File:Coptic Fai-min.svg",
+      uppercaseImage: "assets/letters/Coptic Fai-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Fai-min.svg",
       uppercaseUnicode: "Ϥ",
       lowercaseUnicode: "ϥ",
       numericValue: 90,
@@ -424,8 +424,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "f"
     },
     {
-      uppercaseImage: "File:Coptic Hai-maj.svg",
-      lowercaseImage: "File:Coptic Hai-min.svg",
+      uppercaseImage: "assets/letters/Coptic Hai-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Hai-min.svg",
       uppercaseUnicode: "Ϧ (Ⳉ)",
       lowercaseUnicode: "ϧ (ⳉ)",
       numericValue: null,
@@ -438,8 +438,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "x"
     },
     {
-      uppercaseImage: "File:Coptic Hori-maj.svg",
-      lowercaseImage: "File:Coptic Hori-min.svg",
+      uppercaseImage: "assets/letters/Coptic Hori-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Hori-min.svg",
       uppercaseUnicode: "Ϩ",
       lowercaseUnicode: "ϩ",
       numericValue: null,
@@ -452,8 +452,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "h"
     },
     {
-      uppercaseImage: "File:Coptic Dandia-maj.svg",
-      lowercaseImage: "File:Coptic Dandia-min.svg",
+      uppercaseImage: "assets/letters/Coptic Dandia-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Dandia-min.svg",
       uppercaseUnicode: "Ϫ",
       lowercaseUnicode: "ϫ",
       numericValue: null,
@@ -466,8 +466,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "g, dʒ (before e̞ or i)"
     },
     {
-      uppercaseImage: "File:Coptic Cima-maj.svg",
-      lowercaseImage: "File:Coptic Cima-min.svg",
+      uppercaseImage: "assets/letters/Coptic Cima-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Cima-min.svg",
       uppercaseUnicode: "Ϭ",
       lowercaseUnicode: "ϭ",
       numericValue: null,
@@ -480,8 +480,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "tʃ (usually following a consonant)"
     },
     {
-      uppercaseImage: "File:Coptic Ti-maj.svg",
-      lowercaseImage: "File:Coptic Ti-min.svg",
+      uppercaseImage: "assets/letters/Coptic Ti-maj.svg",
+      lowercaseImage: "assets/letters/Coptic Ti-min.svg",
       uppercaseUnicode: "Ϯ",
       lowercaseUnicode: "ϯ",
       numericValue: null,
@@ -494,8 +494,8 @@ export class CopticAlphabetPage {
       grecoBohairicPron: "ti"
     },
     {
-      uppercaseImage: "File:Coptic Sampi.svg",
-      lowercaseImage: "File:Coptic Sampi.svg",
+      uppercaseImage: "assets/letters/Coptic Sampi.svg",
+      lowercaseImage: "assets/letters/Coptic Sampi.svg",
       uppercaseUnicode: "Ⳁ",
       lowercaseUnicode: "ⳁ",
       numericValue: 900,
