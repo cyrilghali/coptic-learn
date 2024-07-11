@@ -11,8 +11,8 @@ import { CopticAlphabetPageRoutingModule } from './coptic-alphabet-routing.modul
     IonicModule,
     CommonModule,
     FormsModule,
-    CopticAlphabetPageRoutingModule
+    CopticAlphabetPageRoutingModule,
   ],
-  declarations: [CopticAlphabetPage]
+  declarations: [CopticAlphabetPage],
 })
 export class CopticAlphabetPageModule {}

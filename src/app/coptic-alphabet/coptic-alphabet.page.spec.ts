@@ -10,7 +10,7 @@ describe('CopticAlphabetPage', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [CopticAlphabetPage],
-      imports: [IonicModule.forRoot()]
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(CopticAlphabetPage);

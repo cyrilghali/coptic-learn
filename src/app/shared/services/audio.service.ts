@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AudioService {
   private audio: HTMLAudioElement;
@@ -14,6 +14,10 @@ export class AudioService {
     this.audio.src = src;
     this.audio.load();
     this.audio.play();
+  }
+
+  loadSound(src: string) {
+    this.audio.load();
   }
 
   stopSound() {

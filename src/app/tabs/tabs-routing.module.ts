@@ -9,19 +9,23 @@ const routes: Routes = [
     children: [
       {
         path: 'tab1',
-        loadChildren: () => import('../lesson/lesson.module').then(m => m.LessonPageModule)
+        loadChildren: () =>
+          import('../lesson/lesson.module').then((m) => m.LessonPageModule),
       },
       {
         path: 'tab2',
-        loadChildren: () => import('../coptic-alphabet/coptic-alphabet.module').then(m => m.CopticAlphabetPageModule)
+        loadChildren: () =>
+          import('../coptic-alphabet/coptic-alphabet.module').then(
+            (m) => m.CopticAlphabetPageModule,
+          ),
       },
-    ]
+    ],
   },
   {
     path: '',
     redirectTo: '/tabs/tab2',
-    pathMatch: 'full'
-  }
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({

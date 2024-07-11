@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'avva';
-  src: url("./Avva_Shenouda.ttf") format('truetype');
+  font-family: "avva";
+  src: url("./Avva_Shenouda.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'athena';
-  src: url("./newathu5_8.woff") format('woff');
+  font-family: "athena";
+  src: url("./newathu5_8.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'athena-bold';
-    src: url("./newathuBold5_8.ttf") format('truetype');
+  font-family: "athena-bold";
+  src: url("./newathuBold5_8.ttf") format("truetype");
 }
 
 html * {
-  font-family: 'athena-bold', sans-serif;
+  font-family: "athena-bold", sans-serif;
 }
