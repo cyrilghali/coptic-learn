@@ -41,7 +41,7 @@ export class CopticAlphabetPage {
     { maj: 'Ϫ', min: 'ϫ', name: 'ḏanḏia', transliteration: ['ḏ', 'j'], pronunciation: ['[d͡ʒ]', '[d͡ʒ, g]', '[j]'], displayLetter: 'g' },
     { maj: 'Ϭ', min: 'ϭ', name: 'qima', transliteration: ['q', 'ch'], pronunciation: ['[q]', '[t͡ʃ]', '[ch]'], displayLetter: 's' },
     { maj: 'Ϯ', min: 'ϯ', name: 'ti', transliteration: ['tt\''], pronunciation: ['[ti, T\']'], displayLetter: '5' },
-    { maj: 'Ⳁ', min: 'ⳁ', name: 'pˢis ənše', transliteration: ['ssss'], pronunciation: ['[c:]', '[t͡s]'], displayLetter: 'usg±§!@#$%ˆ&*()_+' }
+   // { maj: 'Ⳁ', min: 'ⳁ', name: 'pˢis ənše', transliteration: ['ssss'], pronunciation: ['[c:]', '[t͡s]'], displayLetter: 'usg±§!@#$%ˆ&*()_+' }
   ];
 playPronunciation(name: string) {
   this.audio.src = `assets/pronunciations/${name}.mp3`;
