@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>
+            Lessons
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let lesson of lessons">
+            <ion-label>
+                <h2>{{ lesson.title }}</h2>
+                <p>{{ lesson.description }}</p>
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

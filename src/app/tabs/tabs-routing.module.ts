@@ -10,7 +10,7 @@ const routes: Routes = [
       {
         path: 'tab1',
         loadChildren: () =>
-          import('../lesson/lesson.module').then((m) => m.LessonPageModule),
+          import('../question/lesson.module').then((m) => m.QuestionPageModule),
       },
       {
         path: 'tab2',

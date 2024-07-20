@@ -19,4 +19,4 @@ import { CopticTransliterationPipe } from 'src/app/shared/pipes/coptic-translite
   ],
   declarations: [LessonPage],
 })
-export class LessonPageModule {}
+export class QuestionPageModule {}

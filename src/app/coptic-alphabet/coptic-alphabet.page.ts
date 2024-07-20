@@ -9,14 +9,7 @@ import { copticLetters } from 'src/app/shared/constants/coptic-letters';
 })
 export class CopticAlphabetPage {
   audio = new Audio();
-
-  playPronunciation(copticLetter: copticLetter) {
-    this.audio.src = copticLetter.sound.pronunciation;
-    this.audio.load();
-    this.audio.play();
-  }
+  protected readonly copticLetters = copticLetters;
 
   constructor() {}
-
-  protected readonly copticLetters = copticLetters;
 }

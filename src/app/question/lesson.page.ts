@@ -5,7 +5,8 @@ import { AudioService } from 'src/app/shared/services/audio.service';
 import { COPTIC_WORDS } from 'src/app/shared/constants/coptic-words-list';
 
 @Component({
-  selector: 'app-lesson',
+  // eslint-disable-next-line @angular-eslint/component-selector
+  selector: '',
   templateUrl: './lesson.page.html',
   styleUrls: ['./lesson.page.scss'],
 })

@@ -10,7 +10,7 @@ const routes: Routes = [
   {
     path: 'lesson',
     loadChildren: () =>
-      import('./lesson/lesson.module').then((m) => m.LessonPageModule),
+      import('./lessons/lessons.module').then((m) => m.LessonsPageModule),
   },
 ];
 @NgModule({
