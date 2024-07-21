@@ -6,11 +6,11 @@
   </ion-header>
   <ion-grid>
     <ion-row>
-      <ion-col *ngFor="let letter of copticLetters" size="4">
+      <ion-col *ngFor="let letter of copticLetters"  size="1">
         <ion-card (click)="(letter)" class="ion-text-center">
           <ion-card-header>
             <ion-card-title class="coptic-text"
-              >{{ letter.lowercaseUnicode}}</ion-card-title
+              >{{ letter.uppercaseUnicode}} {{ letter.lowercaseUnicode}}</ion-card-title
             >
           </ion-card-header>
           <ion-card-content>

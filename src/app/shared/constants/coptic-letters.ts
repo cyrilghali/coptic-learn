@@ -497,8 +497,8 @@ export const copticLetters: copticLetter[] = [
   {
     uppercaseImage: 'assets/letters/Coptic Hai-maj.svg',
     lowercaseImage: 'assets/letters/Coptic Hai-min.svg',
-    uppercaseUnicode: 'Ϧ (Ⳉ)',
-    lowercaseUnicode: 'ϧ (ⳉ)',
+    uppercaseUnicode: 'Ϧ',
+    lowercaseUnicode: 'ϧ',
     numericValue: null,
     letterName: 'Khei',
     greekEquiv: '(none)',
