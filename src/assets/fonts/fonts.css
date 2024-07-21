@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "avva";
+  font-family: "AvvaShenouda";
   src: url("./Avva_Shenouda.ttf") format("truetype");
 }
 
@@ -13,6 +13,18 @@
   src: url("./newathuBold5_8.ttf") format("truetype");
 }
 
-html * {
-  font-family: "athena-bold", sans-serif;
+@font-face {
+  font-family: "copticforall";
+  src: url("./copticforall.ttf") format("truetype");
+  src: url("./copticforall.woff") format("woff");
+  src: url("./copticforall.woff2") format("woff2");
+  src: url("./copticforall.eot") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "AvvaMarcosNormal";
+  src: url("./AvvaMarcosNormal.ttf") format("truetype");
+  src: url("./AvvaMarcosNormal.woff") format("woff");
+  src: url("./AvvaMarcosNormal.woff2") format("woff2");
+  src: url("./AvvaMarcosNormal.eot") format("embedded-opentype");
 }

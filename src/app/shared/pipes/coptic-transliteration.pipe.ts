@@ -23,7 +23,8 @@ export class CopticTransliterationPipe implements PipeTransform {
   } {
     const map: { [key: string]: string } = {};
     letters.forEach((letter) => {
-      map[letter.lowercaseUnicode] = letter.copticFontMapping;
+      map[letter.lowercaseUnicode] =
+        letter.copticLetterFontMapping['AvvaShenouda'];
     });
     return map;
   }

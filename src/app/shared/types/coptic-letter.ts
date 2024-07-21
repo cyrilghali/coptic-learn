@@ -11,7 +11,9 @@ export interface copticLetter {
   bohairicPron: string;
   lateCopticPron: string;
   grecoBohairicPron: string;
-  copticFontMapping: string;
+  copticLetterFontMapping: {
+    [key: string]: string;
+  };
   sound: {
     pronunciation: string;
   };
