@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "AvvaShenouda";
-  src: url("./Avva_Shenouda.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "athena";
   src: url("./newathu5_8.woff") format("woff");
 }
