@@ -1,42 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<title>Wikimedia Error</title>
-<style>
-* { margin: 0; padding: 0; }
-body { background: #fff; font: 15px/1.6 sans-serif; color: #333; }
-.content { margin: 7% auto 0; padding: 2em 1em 1em; max-width: 640px; }
-.footer { clear: both; margin-top: 14%; border-top: 1px solid #e5e5e5; background: #f9f9f9; padding: 2em 0; font-size: 0.8em; text-align: center; }
-img { float: left; margin: 0 2em 2em 0; }
-a img { border: 0; }
-h1 { margin-top: 1em; font-size: 1.2em; }
-.content-text { overflow: hidden; overflow-wrap: break-word; word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
-p { margin: 0.7em 0 1em 0; }
-a { color: #0645ad; text-decoration: none; }
-a:hover { text-decoration: underline; }
-code { font-family: sans-serif; }
-.text-muted { color: #777; }
-@media (prefers-color-scheme: dark) {
-  a { color: #9e9eff; }
-  body { background: transparent; color: #ddd; }
-  .footer { border-top: 1px solid #444; background: #060606; }
-  #logo { filter: invert(1) hue-rotate(180deg); }
-  .text-muted { color: #888; }
-}
-</style>
-<meta name="color-scheme" content="light dark">
-<div class="content" role="main">
-<a href="https://www.wikimedia.org"><img id="logo" src="https://www.wikimedia.org/static/images/wmf-logo.png" srcset="https://www.wikimedia.org/static/images/wmf-logo-2x.png 2x" alt="Wikimedia" width="135" height="101">
-</a>
-<h1>Error</h1>
-<div class="content-text">
-<p>Our servers are currently under maintenance or experiencing a technical problem.
-
-Please <a href="" title="Reload this page" onclick="window.location.reload(false); return false">try again</a> in a few&nbsp;minutes.</p>
-
-<p>See the error message at the bottom of this page for more&nbsp;information.</p>
-</div>
-</div>
-<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request from 87.17.113.14 via cp6007 cp6007, Varnish XID 974421603<br>Upstream caches: cp6007 int<br>Error: 403, Forbidden. Please comply with the User-Agent policy: https://meta.wikimedia.org/wiki/User-Agent_policy at Thu, 11 Jul 2024 08:28:58 GMT</code></p>
-</div>
-</html>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="43.52"
+   height="52.150002"
+   id="svg2525">
+  <defs
+     id="defs2528" />
+  <path
+     d="M 505.9375,83.21495 L 502.90625,83.02745 C 502.90624,83.027456 501.8651,84.444301 502.90625,84.8087 C 504.52693,85.375936 505.51938,85.685507 505.5625,86.4337 C 505.56249,86.433703 505.66353,108.32668 505.97927,140.11669 C 494.29235,140.0929 484.49968,143.04249 483.1875,143.52136 C 479.86198,144.73499 478.5,145.14897 478.5,148.09375 C 477.91104,152.21644 489.09376,163.40625 489.09375,163.40625 C 489.87902,164.17076 491.88673,162.21104 491.4375,161.625 C 489.48466,159.07744 486.22945,153.85339 487.3125,152.78125 C 487.47463,152.62074 495.58117,148.3336 506.07302,148.27294 C 506.23756,164.98632 506.65625,189.65042 506.65625,190.90625 C 506.65624,194.65434 511.23022,196.3125 513.3125,196.3125 C 515.39479,196.31248 522.06251,194.02966 522.0625,190.90625 C 522.06253,189.18913 520.38521,187.14287 519.96875,181.3125 C 519.90999,180.48948 519.87606,163.53665 519.84375,148.24169 C 534.51927,148.23373 548.9344,152.49938 550.34375,152.78125 C 553.28857,153.3702 554.18535,158.05412 555.65625,159.28125 C 557.17963,160.55214 558.53121,160.75001 558.4375,159.625 C 558.25726,157.46044 557.2106,154.45376 557,152.9375 C 556.80363,151.52329 556.95765,147.35744 556.21875,145.71875 C 555.77806,144.7413 550.85689,143.84774 548.5625,143.31313 C 542.30689,141.85553 533.57842,140.288 519.84375,140.21044 C 519.83229,133.65293 519.82332,136.33481 519.8134,129.88177 C 519.77471,129.51279 520.10791,129.30512 520.41258,129.24973 C 545.02965,127.84473 558.09379,119.45866 558.00032,102.52808 C 557.91408,86.905923 541.02777,82.449667 533.36574,82.412656 C 522.55717,82.680087 515.08025,82.947519 505.9375,83.21495 z M 519.75,86.281668 C 519.76424,85.957626 520.72573,85.857285 521.19906,85.870298 C 539.9602,86.386096 543.1773,93.579917 542.96907,105.18433 C 542.703,119.74597 534.27104,123.80374 521.19818,125.02984 C 519.7574,125.24754 519.81094,124.62314 519.78929,123.43905 C 519.43032,102.96241 519.75136,87.524697 519.75,86.281668 z"
+     transform="matrix(0.3762627,0,0,0.3763786,-173.07748,-23.847538)"
+     id="path2536"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.1328654;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+</svg>

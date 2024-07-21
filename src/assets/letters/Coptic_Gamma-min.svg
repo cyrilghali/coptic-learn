@@ -1,42 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<title>Wikimedia Error</title>
-<style>
-* { margin: 0; padding: 0; }
-body { background: #fff; font: 15px/1.6 sans-serif; color: #333; }
-.content { margin: 7% auto 0; padding: 2em 1em 1em; max-width: 640px; }
-.footer { clear: both; margin-top: 14%; border-top: 1px solid #e5e5e5; background: #f9f9f9; padding: 2em 0; font-size: 0.8em; text-align: center; }
-img { float: left; margin: 0 2em 2em 0; }
-a img { border: 0; }
-h1 { margin-top: 1em; font-size: 1.2em; }
-.content-text { overflow: hidden; overflow-wrap: break-word; word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
-p { margin: 0.7em 0 1em 0; }
-a { color: #0645ad; text-decoration: none; }
-a:hover { text-decoration: underline; }
-code { font-family: sans-serif; }
-.text-muted { color: #777; }
-@media (prefers-color-scheme: dark) {
-  a { color: #9e9eff; }
-  body { background: transparent; color: #ddd; }
-  .footer { border-top: 1px solid #444; background: #060606; }
-  #logo { filter: invert(1) hue-rotate(180deg); }
-  .text-muted { color: #888; }
-}
-</style>
-<meta name="color-scheme" content="light dark">
-<div class="content" role="main">
-<a href="https://www.wikimedia.org"><img id="logo" src="https://www.wikimedia.org/static/images/wmf-logo.png" srcset="https://www.wikimedia.org/static/images/wmf-logo-2x.png 2x" alt="Wikimedia" width="135" height="101">
-</a>
-<h1>Error</h1>
-<div class="content-text">
-<p>Our servers are currently under maintenance or experiencing a technical problem.
-
-Please <a href="" title="Reload this page" onclick="window.location.reload(false); return false">try again</a> in a few&nbsp;minutes.</p>
-
-<p>See the error message at the bottom of this page for more&nbsp;information.</p>
-</div>
-</div>
-<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request from 87.17.113.14 via cp6007 cp6007, Varnish XID 979583965<br>Upstream caches: cp6007 int<br>Error: 403, Forbidden. Please comply with the User-Agent policy: https://meta.wikimedia.org/wiki/User-Agent_policy at Thu, 11 Jul 2024 08:28:59 GMT</code></p>
-</div>
-</html>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="43"
+   height="36"
+   viewBox="0 0 380 315"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <path
+     d="M 129.9893,288.37752 C 122.0864,290.30262 119.0535,293.36942 125.8454,298.73922 C 159.55729,311.26412 183.88019,311.42412 223.85009,294.66222 C 242.72969,286.74482 248.62489,254.46692 208.06369,226.98692 C 191.64339,215.86232 183.51859,205.89592 170.24459,193.82622 C 151.73139,170.02642 163.55269,149.52112 185.13229,144.99942 L 250.16929,145.08052 L 233.82529,184.32492 C 234.20809,192.87742 239.64009,196.91222 249.90979,196.61862 L 306.30419,131.97942 L 108.185,131.97942 L 108.185,145.30922 L 148.29009,145.30922 C 126.7768,169.75692 118.395,205.32882 148.14359,224.58772 C 161.51799,231.37462 163.60429,237.20992 172.89739,250.27522 C 178.72079,267.68722 178.82289,292.69752 129.9893,288.37752 z "
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="path2607" />
+</svg>

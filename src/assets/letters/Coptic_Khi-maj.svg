@@ -1,42 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<title>Wikimedia Error</title>
-<style>
-* { margin: 0; padding: 0; }
-body { background: #fff; font: 15px/1.6 sans-serif; color: #333; }
-.content { margin: 7% auto 0; padding: 2em 1em 1em; max-width: 640px; }
-.footer { clear: both; margin-top: 14%; border-top: 1px solid #e5e5e5; background: #f9f9f9; padding: 2em 0; font-size: 0.8em; text-align: center; }
-img { float: left; margin: 0 2em 2em 0; }
-a img { border: 0; }
-h1 { margin-top: 1em; font-size: 1.2em; }
-.content-text { overflow: hidden; overflow-wrap: break-word; word-wrap: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; -ms-hyphens: auto; hyphens: auto; }
-p { margin: 0.7em 0 1em 0; }
-a { color: #0645ad; text-decoration: none; }
-a:hover { text-decoration: underline; }
-code { font-family: sans-serif; }
-.text-muted { color: #777; }
-@media (prefers-color-scheme: dark) {
-  a { color: #9e9eff; }
-  body { background: transparent; color: #ddd; }
-  .footer { border-top: 1px solid #444; background: #060606; }
-  #logo { filter: invert(1) hue-rotate(180deg); }
-  .text-muted { color: #888; }
-}
-</style>
-<meta name="color-scheme" content="light dark">
-<div class="content" role="main">
-<a href="https://www.wikimedia.org"><img id="logo" src="https://www.wikimedia.org/static/images/wmf-logo.png" srcset="https://www.wikimedia.org/static/images/wmf-logo-2x.png 2x" alt="Wikimedia" width="135" height="101">
-</a>
-<h1>Error</h1>
-<div class="content-text">
-<p>Our servers are currently under maintenance or experiencing a technical problem.
-
-Please <a href="" title="Reload this page" onclick="window.location.reload(false); return false">try again</a> in a few&nbsp;minutes.</p>
-
-<p>See the error message at the bottom of this page for more&nbsp;information.</p>
-</div>
-</div>
-<div class="footer"><p>If you report this error to the Wikimedia System Administrators, please include the details below.</p><p class="text-muted"><code>Request from 87.17.113.14 via cp6007 cp6007, Varnish XID 983047353<br>Upstream caches: cp6007 int<br>Error: 403, Forbidden. Please comply with the User-Agent policy: https://meta.wikimedia.org/wiki/User-Agent_policy at Thu, 11 Jul 2024 08:28:58 GMT</code></p>
-</div>
-</html>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="43"
+   height="36"
+   viewBox="0 0 380 315"
+   id="svg2">
+  <defs
+     id="defs4" />
+  <path
+     d="M 38.947635,68.833931 C 51.361955,66.630294 87.485925,73.244275 89.047665,99.439843 C 90.608185,125.61553 67.646945,148.01079 42.488315,134.75763 C 22.270375,124.10725 4.345995,104.80856 9.841515,80.734488 C 16.999775,49.37679 46.113485,27.718881 77.891635,23.112702 C 108.65578,18.653502 137.00387,33.452125 155.70954,56.069228 C 168.55177,71.596797 184.05343,112.27173 194.93825,102.0758 C 234.74761,64.785754 245.59106,6.1688237 340.61125,17.762932 C 362.91679,20.484625 377.56997,44.417354 368.37431,51.794388 C 349.89008,66.623022 315.37775,94.228243 309.88131,91.518533 C 290.72499,82.074595 242.67189,72.488392 233.92607,98.581333 C 226.76679,119.94118 215.8412,138.24883 229.21512,159.75843 C 256.57708,203.7654 305.59091,249.71206 347.8662,288.42692 C 363.9697,303.17412 270.94594,295.33577 257.37639,296.32723 C 240.02702,297.59483 197.19863,201.14848 186.33347,200.9382 C 174.9186,200.71728 172.33395,225.11819 148.75592,264.27203 C 128.94633,297.16792 92.557405,301.73324 59.595655,294.85849 C 42.688655,291.33226 27.807885,287.57742 19.029595,272.5508 C 5.812595,249.92582 50.641005,231.26829 63.023355,212.82514 C 72.026775,199.41487 81.678925,248.30056 107.09782,248.93118 C 133.65022,249.58997 162.70914,186.69369 163.80629,175.49965 C 165.86357,154.51108 153.53232,122.3554 131.45068,97.995983 C 114.20906,78.975778 102.32981,57.770171 65.989535,47.338363 C 53.888835,43.86478 33.418015,69.815453 38.947635,68.833931 z "
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="path3699" />
+</svg>
