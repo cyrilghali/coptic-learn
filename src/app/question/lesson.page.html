@@ -23,7 +23,7 @@
             [class.selected]="choice === this.currentChoice"
             class="answer-button"
           >
-            {{ choice.unicodeWord }}
+            {{ choice.unicodeWord.toLowerCase() }}
           </ion-button>
           <ion-button (click)="submit()" class="submit-button"
             >Submit</ion-button
