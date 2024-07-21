@@ -7,16 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { LessonPageRoutingModule } from './lesson-routing.module';
 
 import { LessonPage } from './lesson.page';
-import { CopticTransliterationPipe } from 'src/app/shared/pipes/coptic-transliteration.pipe';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    LessonPageRoutingModule,
-    CopticTransliterationPipe,
-  ],
+  imports: [CommonModule, FormsModule, IonicModule, LessonPageRoutingModule],
   declarations: [LessonPage],
 })
 export class QuestionPageModule {}
